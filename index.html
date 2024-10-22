@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Blasting Season</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #enterButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #message {
+            display: none;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <button id="enterButton">Click here to Enter</button>
+        <div id="message">Congrats mfers! It's TOP BLASTING SEASON! $TBS</div>
+    </div>
+
+    <script>
+        const enterButton = document.getElementById('enterButton');
+        const message = document.getElementById('message');
+
+        enterButton.addEventListener('click', function() {
+            enterButton.style.display = 'none';
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
